@@ -1,5 +1,6 @@
 require('ggplot2')
 
+#' @export
 plot_cutoff_table <- function(cutoff_table){
   p <- ggplot(cutoff_table, aes(x=cutoff, y=fraction_smaller_than_cutoff, group=1)) +
     geom_line() +

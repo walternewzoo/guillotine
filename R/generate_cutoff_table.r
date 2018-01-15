@@ -1,5 +1,6 @@
 require('ggplot2')
 
+#' @export
 generate_cutoff_table <- function(input, decimals = 1){
   input_min = min(input)
   input_max = max(input)
