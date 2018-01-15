@@ -20,14 +20,3 @@ generate_cutoff_table <- function(input, decimals = 1){
   output <- output[ , -which(names(output) %in% c("total_n"))]
   return(output)
 }
-
-# cutoff_table <- generate_cutoff_table(preds$model_2_pred)
-
-plot_cutoff_table <- function(cutoff_table){
-  p <- ggplot(cutoff_table, aes(x=cutoff, y=fraction_smaller_than_cutoff, group=1)) + 
-    geom_line() + 
-    xlab('Cutoff') + 
-    ylab('Fraction of input > cutoff') +
-    ggtitle('Cumulative percentage of input > cutoff') + theme_bw()
-  return(p)
-}
