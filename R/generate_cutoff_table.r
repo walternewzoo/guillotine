@@ -1,3 +1,10 @@
+#' Generate Cutoff Table
+#'
+#' This function makes a cutoff table from a numerical vector and returns a table of cutoff points, with the percentage of observations from the vector that fall above / below the cutoff.
+#'
+#' @param input A numerical vector
+#' @param decimals A specified amount of decimals at which to make the cutoffs. E.g., setting decimals to 1 makes cutoffs at .1, .2, .3, etc.
+#' @return A table of cutoffs and the percentage of observations from the vector that are above / below the cutoff.
 #' @export
 generate_cutoff_table <- function(input, decimals = 1){
   input_min = min(input)
