@@ -1,0 +1,12 @@
+Package: guillotine
+Title: Create and visualize cutoff tables easily.
+Version: 0.0.0.9000
+Authors@R: person("Walter", "Hoekstra", email = "w.s.hoekstra@outlook.com", role = c("aut", "cre"))
+Depends: R (>= 3.4.2)
+Description: Guillotine creates tables with a range of cutoff points and the percentage of observations that are under/over that cutoff, based on a single numerical vector. It also provides a convenience plotting function for easy inspection.
+License: MIT
+Encoding: UTF-8
+LazyData: true
+Imports:
+	ggplot2
+RoxygenNote: 6.0.1
